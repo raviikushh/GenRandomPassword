@@ -1,13 +1,15 @@
 console.log("Welcome to Random Password Generator")
 const PasswordBox = document.getElementById("Password")
-const length = document.getElementById("length").value;
+
 const UpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const LowerCase = "abcdefghijklmnopqrstuvwxyz"
 const number = "0123456789"
 const symbol = "@#$%^&*()_+~|!}{[]></-="
 const allChars = UpperCase+LowerCase+number+symbol;
 
+
 document.getElementById("Gpass").addEventListener("click",function createPass(){
+    const length = document.getElementById("my-length").value;
     if(length>50) alert("Password length can't be greater than 50")
     else{
     let Password = ""
@@ -28,7 +30,3 @@ document.getElementById("Copy").addEventListener("click",function PassCopy(){
     PasswordBox.select();
     document.execCommand("copy");
 });
-
-document.getElementById("refresh").addEventListener("click",function RefreshPage(){
-    window.location.reload();
-})

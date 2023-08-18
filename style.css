@@ -79,11 +79,3 @@ body{
 #Password{
     width: 45vw;
 }
-.Input{
-    display: flex;
-    align-items: center;
-}
-.Input button{
-    margin-left: 20px;
-    height: 7vh;
-}
